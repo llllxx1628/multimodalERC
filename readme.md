@@ -6,9 +6,9 @@ The codebase includes the full pipeline, starting from raw videos and audio, thr
 # How to start
 
 ## Clone this repository
-'''
+```
 git clone https://github.com/llllxx1628/multimodalERC.git
-'''
+```
 ## Enviroment setting
 Hardware: single RTX 3090 GPU, 24GB RAM
 conda create -n multimodalERCenv python=3.8  
