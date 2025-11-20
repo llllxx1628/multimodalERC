@@ -22,22 +22,26 @@ pip install -r requirements.txt
 ```
 # Training Options
 
-```
+
 You can run the project in two ways using the provided train.sh script.
-```
+
 
 ## Training from scratch
 
-```
+
 This mode starts from raw MELD videos and audio. It performs all steps automatically.  
+
 Run:  
+```
 bash train.sh from_scratch
 ```
 
 ## Training using pre-extracted features
 
-```
+
 If you already have all features generated, you can directly train the multimodal ERC model without repeating extraction.  
+
 Run:  
+```
 bash train.sh erc_only
 ```
