@@ -1,0 +1,77 @@
+{
+  "batch_size": 16,
+  "num_epochs": 30,
+  "embed_dims_full": {
+    "v": 768,
+    "a": 1024,
+    "t": 1024
+  },
+  "classes": {
+    "meld": [
+      "neutral",
+      "surprise",
+      "fear",
+      "sadness",
+      "joy",
+      "disgust",
+      "anger"
+    ]
+  },
+  "feature_paths": {
+    "meld": {
+      "train": {
+        "visual": "/MELD/Dataset/Data/train_features/visual_features.json",
+        "audio": "/MELD/Dataset/Data/train_features/audio_features.json",
+        "text": "/MELD/Dataset/Data/train_features/text_features.json"
+      },
+      "val": {
+        "visual": "/MELD/Dataset/Data/dev_features/visual_features.json",
+        "audio": "/MELD/Dataset/Data/dev_features/audio_features.json",
+        "text": "/MELD/Dataset/Data/dev_features/text_features.json"
+      },
+      "test": {
+        "visual": "/MELD/Dataset/Data/test_features/visual_features.json",
+        "audio": "/MELD/Dataset/Data/test_features/audio_features.json",
+        "text": "/MELD/Dataset/Data/test_features/text_features.json"
+      }
+    }
+  },
+  "fixed_params": {
+    "fusion_dim": 256,
+    "num_layers_fusion": 3,
+    "num_heads_fusion": 8,
+    "dropout_rate": 0.1113389962276903,
+    "graph_k_text": 12,
+    "graph_k_audio": 6,
+    "graph_k_visual": 7,
+    "temporal_weight_text": 1.653647526520393,
+    "temporal_weight_audio": 0.534697670184466,
+    "temporal_weight_visual": 1.0014116523635417,
+    "lr_text": 1.708857357010743e-05,
+    "lr_audio": 2.8310157425471475e-06,
+    "lr_visual": 1.5846528953372982e-05,
+    "lr_fusion": 1.4733257939520586e-05,
+    "wd_text": 0.0004004846462605576,
+    "wd_audio": 0.000011630145789712038,
+    "wd_visual": 0.00009208015059525338,
+    "wd_fusion": 0.0000997646370349997,
+    "poly_alpha": 1.9508055462649292,
+    "poly_gamma": 1.402459950741192,
+    "main_loss_weight": 0.30033659945418567,
+    "aux_loss_weights": {
+      "t": 0.4377451330211305,
+      "a": 0.2658361822470082,
+      "v": 0.3528118819082934
+    },
+    "distill_temp": 1.8246074213744867,
+    "distill_alpha": 0.5772777397767895,
+    "gradient_clip_norm": 0.6311058766199245,
+    "label_smoothing": 0.14402230062019625,
+    "early_stopping_patience": 6,
+    "lr_reduce_patience": 3,
+    "lr_reduce_factor": 0.4431268354268777,
+    "use_moe": false,
+    "use_contrastive": false,
+    "use_uncertainty": true
+  }
+}
