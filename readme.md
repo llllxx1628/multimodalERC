@@ -47,3 +47,18 @@ Run:
 ```
 bash train.sh erc_only
 ```
+
+#### Related Publication
+
+Please cite the following paper when you publish a paper using this code.
+```
+@inproceedings{LiXiao26_mmERC,
+author={Xiao Li and Kotaro Funakoshi and Manabu Okumura},
+title={Emotion Recognition in Multi-Speaker Conversations through Speaker Identification, Knowledge Distillation, and Hierarchical Fusion},
+booktitle={Findings of EACL 2026},
+year=2026,
+note={(to appear, as of Jan 2026)}
+}
+```
+
+arXiv: https://arxiv.org/abs/2511.13731
