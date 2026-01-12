@@ -171,7 +171,7 @@ def main():
     datasets = [
         {
             "name": "train",
-            "input_video_dir": "/path/to/MELD.Raw/output_repeated_splits_train",
+            "input_video_dir": "/path/to/MELD.Raw/train",
             "output_video_dir": "/path/to/meld/train_video",
             "output_audio_dir": "/path/to/meld/train_audio",
         },
