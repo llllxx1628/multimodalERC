@@ -590,6 +590,12 @@ if __name__ == "__main__":
         description="multimodal ERC training pipeline"
     )
     parser.add_argument(
+    "--dataset",
+    type=str,
+    required=True,
+    help="Dataset name,meld or iemocap",
+  )
+    parser.add_argument(
         "--modalities", nargs="+", choices=["v", "a", "t"], default=["v", "a", "t"]
     )
     parser.add_argument("--config", required=True, help="Path to JSON config file")
