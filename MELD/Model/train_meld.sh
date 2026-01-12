@@ -2,7 +2,7 @@ set -euo pipefail
 
 MODE=${1:-"erc_only"}
 PYTHON=${PYTHON:-python}
-CONFIG_FILE=${CONFIG_FILE:-"ERC/MELD/Dataset/config.json"}
+CONFIG_FILE=${CONFIG_FILE:-"/ERC/MELD/Dataset/config.json"}
 MODALITIES=${MODALITIES:-"v a t"}
 
 echo "---------------------------------------------"
@@ -35,6 +35,7 @@ if [ "${MODE}" = "from_scratch" ]; then
 elif [ "${MODE}" = "erc_only" ]; then
   echo "Running ERC training with pre-extracted features..."
   ${PYTHON} train_erc.py \
+      --dataset meld \
       --modalities ${MODALITIES} \
       --config "${CONFIG_FILE}"
 
