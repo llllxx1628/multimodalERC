@@ -25,7 +25,7 @@ pip install -r requirements.txt
 ## Training Options
 
 
-You can run the project in two ways using the provided train.sh script.
+You can run the project in two ways using the provided train_{meld,iemo}.sh scripts.
 
 
 #### Training from scratch
@@ -35,7 +35,7 @@ This mode starts from raw MELD videos and audio. It performs all steps automatic
 
 Run:  
 ```
-bash train.sh from_scratch
+bash train_meld.sh from_scratch
 ```
 
 #### Training using pre-extracted features
@@ -45,7 +45,7 @@ If you already have all features generated, you can directly train the multimoda
 
 Run:  
 ```
-bash train.sh erc_only
+bash train_meld.sh erc_only
 ```
 
 #### Related Publication
