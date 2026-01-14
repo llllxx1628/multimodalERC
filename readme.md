@@ -6,6 +6,7 @@ This repository provides the implementation of a multimodal emotion recognition 
 The codebase includes the full pipeline, starting from raw videos and audio, through lip–speech synchronisation learning and feature extraction, and finally training the emotion classification model.
 
 ## How to start
+Expected hardware: single RTX 3090 GPU, 24GB RAM
 
 #### Clone this repository
 ```
@@ -13,7 +14,6 @@ git clone https://github.com/llllxx1628/multimodalERC.git
 ```
 #### Enviroment setting
 ```
-Hardware: single RTX 3090 GPU, 24GB RAM
 conda create -n multimodalERCenv python=3.8  
 conda activate MultiEMOEnv
 ```
