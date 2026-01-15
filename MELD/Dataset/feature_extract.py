@@ -268,7 +268,7 @@ def train_meld_text_encoder(
         total_loss = 0.0
         num_batches = 0
 
-        for batch_data in tqdm(train_loader, desc=f"Epoch {epoch + 1}"):
+        for batch_data in tqdm.tqdm(train_loader, desc=f"Epoch {epoch + 1}"):
             if batch_data is None:
                 continue
 
